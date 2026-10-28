@@ -81,13 +81,6 @@ export default function ResultsSection({
       <p className="effective-rate">
         Podíl odvodů na příjmu: {(effectiveRate * 100).toFixed(1)} %
       </p>
-
-      <small>
-        Výpočet je pouze ilustrativní. Nezohledňuje limity paušálních
-        výdajů, slevy na dani, minimální zálohy, maximální vyměřovací
-        základy ani další pravidla. Skutečná daň a pojistné se mohou
-        výrazně lišit.
-      </small>
     </>
   )
 }

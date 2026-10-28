@@ -19,7 +19,7 @@ function App() {
   const expenses = income * expenseRate
   const profit = income - expenses
 
-  // Simplified estimates, not an official tax calculation.
+  // Simplified estimates, ai used for the values as I am lazy going to google
   const estimatedTax = profit * 0.15
   const estimatedHealthInsurance = profit * 0.5 * 0.135
   const estimatedSocialInsurance = profit * 0.5 * 0.292
@@ -32,7 +32,7 @@ function App() {
   const remainingIncome = profit - totalDeductions
   const effectiveRate = income > 0 ? totalDeductions / income : 0
 
-  return (
+  return <>
     <main className="calculator">
       <h1>Kalkulačka paušálních výdajů</h1>
 
@@ -60,7 +60,7 @@ function App() {
         formatter={formatter}
       />
     </main>
-  )
+  </>
 }
 
 export default App
